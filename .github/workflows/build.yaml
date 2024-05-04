@@ -26,3 +26,7 @@ jobs:
         run: npm ci
       - name: Build 
         run: npx serverless deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ SECRETS.AWS_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ SECRETS.AWS_SECRET_KEY }}
+          
