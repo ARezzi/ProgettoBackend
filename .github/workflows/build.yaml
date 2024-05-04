@@ -25,4 +25,4 @@ jobs:
       - name: Install packages
         run: npm ci
       - name: Build 
-        run: serverless deploy
+        run: npx serverless deploy
